@@ -38,8 +38,9 @@ def add():
 
 @app.route("/delete",methods=["GET","POST"])
 def delete():
-    if request.method =="POST"
-        
+    if request.method =="POST":
+        pass
+
 
 if __name__ == "__main__":
     app.run(debug=True)
