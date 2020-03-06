@@ -45,7 +45,7 @@ def add():
 def delete():
     if request.method =="POST":
         cursor = get_db().cursor()
-        id = int(request.form["it_name"])
+        id = int(request.form["item_name"])
         sql = "DELETE FROM food WHERE id = ?"
         cursor.execute(sql,(id,))
         get_db().commit()
